@@ -13,6 +13,9 @@ bind-key j select-pane -D
 bind-key k select-pane -U
 bind-key l select-pane -R
 
+# Toggle Mouse
+bind m set -g mouse \; display "Mouse: #{?mouse,ON,OFF}"
+
 # Window
 bind-key c command-prompt -p "Name:" "new-window -n '%%'"
 bind-key n command-prompt -p "Rename:" "rename-window '%%'"
