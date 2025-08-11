@@ -11,7 +11,20 @@ set -g base-index 1
 setw -g pane-base-index 1
 set-option -g renumber-windows on
 
+# Performance & Behavior
+set -g history-limit 10000
+set -g escape-time 0
+set -g repeat-time 1000
+set -g focus-events on
+
 # Clipboard
 set -g allow-passthrough on
 set -g @yank_selection_mouse 'clipboard'
 set -g @yank_action 'copy-pipe'
+
+# Session Management
+set -g @resurrect-capture-pane-contents 'on'
+set -g @resurrect-strategy-vim 'session'
+set -g @resurrect-strategy-nvim 'session'
+set -g @continuum-restore 'on'
+set -g @continuum-save-interval '15'

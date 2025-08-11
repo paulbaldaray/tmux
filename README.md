@@ -9,14 +9,23 @@ git clone https://github.com/paulbaldaray/tmux ~/.config/tmux
 
 **Prefix**: `Ctrl+Space` (Space again to forward prefix)
 
+### Windows & Sessions
 | Key | Action |
 |-----|---------|
 | `Prefix + r` | Reload config |
 | `Prefix + I` | Install plugins |
 | `Prefix + m` | Toggle mouse |
-| `Prefix + h/j/k/l` | Navigate panes (Vim-style) |
 | `Prefix + c` | New window (with name) |
 | `Prefix + n` | Rename window |
 | `Prefix + s` | Swap window |
 
-**Copy/Visual**: Vim Bindings
+### Panes
+| Key | Action |
+|-----|---------|
+| `Prefix + h/j/k/l` | Navigate panes (Vim-style) |
+| `Prefix + |` | Split vertically (preserve path) |
+| `Prefix + -` | Split horizontally (preserve path) |
+| `Prefix + H/J/K/L` | Resize panes (repeatable) |
+
+### Copy/Visual
+**Vim Bindings**: `v` (select), `y` (copy), `i` (exit)
