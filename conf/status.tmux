@@ -1,4 +1,4 @@
-# Catppuccin colorscheme
+# Catppuccin
 set -g @dark "#1e1e2e"
 set -g @darker "#181825"
 set -g @darkest "#11111b"
