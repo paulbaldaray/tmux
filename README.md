@@ -23,7 +23,7 @@ git clone https://github.com/paulbaldaray/tmux ~/.config/tmux
 | Key | Action |
 |-----|---------|
 | `Prefix + h/j/k/l` | Navigate panes (Vim-style) |
-| `Prefix + |` | Split vertically (preserve path) |
+| `Prefix + \|` | Split vertically (preserve path) |
 | `Prefix + -` | Split horizontally (preserve path) |
 | `Prefix + H/J/K/L` | Resize panes (repeatable) |
 
