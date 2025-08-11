@@ -1,6 +1,8 @@
 # Terminal
 set -g default-terminal "tmux-256color"
 set -g default-shell /bin/zsh
+set -ga terminal-overrides ',tmux-256color:Ss=\E[%p1%d q:Se=\E[2 q'
+set -as terminal-features ',tmux*:RGB'
 
 # Numbering
 set -g base-index 1
