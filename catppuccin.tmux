@@ -17,6 +17,6 @@ set -g @ctp_mauve "#cba6f7"
 set -g status-style "bg=#{@ctp_bg},fg=#{@ctp_text}"
 
 # Window status - much lighter inactive number background
-set -g window-status-format "#[fg=#{@ctp_crust},bg=#{@ctp_overlay2}] #I #[fg=#{@ctp_text},bg=#{@ctp_surface0}]#W#[bg=#{@ctp_bg}] "
-set -g window-status-current-format "#[fg=#{@ctp_crust},bg=#{@ctp_mauve}] #I #[fg=#{@ctp_text},bg=#{@ctp_surface1}]#W#[bg=#{@ctp_bg}] "
-set -g window-status-separator ""
+set -g window-status-format "#[fg=#{@ctp_crust},bg=#{@ctp_overlay2}] #I #[fg=#{@ctp_text},bg=#{@ctp_surface0}]#W "
+set -g window-status-current-format "#[fg=#{@ctp_crust},bg=#{@ctp_mauve}] #I #[fg=#{@ctp_text},bg=#{@ctp_surface1}]#W "
+set -g window-status-separator " "
