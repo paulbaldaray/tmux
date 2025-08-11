@@ -13,6 +13,3 @@ set-option -g renumber-windows on
 set -g allow-passthrough on
 set -g @yank_selection_mouse 'clipboard'
 set -g @yank_action 'copy-pipe'
-
-# Misc
-setw -g mode-keys vi

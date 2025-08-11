@@ -21,3 +21,9 @@ bind-key n command-prompt -p "Rename:" "rename-window '%%'"
 
 # Swap windows
 bind-key s command-prompt -p "Swap window with:" "swap-window -d -t '%%'"
+
+# Vim
+setw -g mode-keys vi
+bind-key -T copy-mode-vi v send-keys -X begin-selection
+bind-key -T copy-mode-vi y send-keys -X copy-selection
+bind-key -T copy-mode-vi i send-keys -X cancel
