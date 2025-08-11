@@ -1,6 +1,6 @@
 # Catppuccin colorscheme
-set -g @dark_bg "#1e1e2e"
-set -g @med_bg "#181825"
+set -g @dark "#1e1e2e"
+set -g @darker "#181825"
 set -g @darkest "#11111b"
 set -g @dark_gray "#313244"
 set -g @med_gray "#45475a"
@@ -29,13 +29,13 @@ set -g @mode_indicator_empty_prompt ' '
 set -g @mode_indicator_sync_prompt ' SYNC '
 
 # Mode indicator colors
-set -g @mode_indicator_empty_mode_style 'bg=#{@dark_bg},fg=#{@bright_text}'
-set -g @mode_indicator_prefix_mode_style 'bg=#{@green},fg=#{@med_bg}'
-set -g @mode_indicator_copy_mode_style 'bg=#{@yellow},fg=#{@med_bg}'
-set -g @mode_indicator_sync_mode_style 'bg=#{@red},fg=#{@med_bg}'
+set -g @mode_indicator_empty_mode_style 'bg=#{@dark},fg=#{@bright_text}'
+set -g @mode_indicator_prefix_mode_style 'bg=#{@green},fg=#{@darker}'
+set -g @mode_indicator_copy_mode_style 'bg=#{@yellow},fg=#{@darker}'
+set -g @mode_indicator_sync_mode_style 'bg=#{@red},fg=#{@darker}'
 
 # Status bar base styling
-set -g status-style "bg=#{@dark_bg},fg=#{@bright_text}"
+set -g status-style "bg=#{@dark},fg=#{@bright_text}"
 
 # Window status formats
 set -g window-status-format "#[fg=#{@darkest},bg=#{@pale_gray}] #I #[fg=#{@bright_text},bg=#{@dark_gray}]#W "
@@ -43,7 +43,8 @@ set -g window-status-current-format "#[fg=#{@darkest},bg=#{@purple}] #I #[fg=#{@
 set -g window-status-separator " "
 
 # Command prompt and message styling
-set -g message-style "bg=#{@dark_bg},fg=#{@teal}"
+set -g message-style "bg=#{@darkest},fg=#{@purple}"
+set -g message-command-style "bg=#{@darkest},fg=#{@light_gray}"
 
 # Pane border styling
 set -g pane-border-style "fg=#{@med_gray}"
