@@ -44,3 +44,7 @@ set -g window-status-separator " "
 
 # Command prompt and message styling
 set -g message-style "bg=#{@dark_bg},fg=#{@teal}"
+
+# Pane border styling
+set -g pane-border-style "fg=#{@med_gray}"
+set -g pane-active-border-style "fg=#{@med_gray}"
