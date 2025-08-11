@@ -15,6 +15,7 @@ set -g @purple "#cba6f7"
 set -g @green "#a6e3a1"
 set -g @yellow "#f9e2af"
 set -g @red "#f38ba8"
+set -g @teal "#94e2d5"
 
 # Status bar position and basic layout
 set-option -g status-position top
@@ -40,3 +41,6 @@ set -g status-style "bg=#{@dark_bg},fg=#{@bright_text}"
 set -g window-status-format "#[fg=#{@darkest},bg=#{@pale_gray}] #I #[fg=#{@bright_text},bg=#{@dark_gray}]#W "
 set -g window-status-current-format "#[fg=#{@darkest},bg=#{@purple}] #I #[fg=#{@bright_text},bg=#{@med_gray}]#W "
 set -g window-status-separator " "
+
+# Command prompt and message styling
+set -g message-style "bg=#{@dark_bg},fg=#{@teal}"
