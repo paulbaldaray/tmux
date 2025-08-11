@@ -14,10 +14,10 @@ bind-key k select-pane -U
 bind-key l select-pane -R
 
 # Create named window
-bind-key c command-prompt -p "New window name:" "new-window -n '%%'"
+bind-key c command-prompt -p "Name:" "new-window -n '%%'"
 
 # Rename window
-bind-key n command-prompt -p "Window name:" "rename-window '%%'"
+bind-key n command-prompt -p "Rename:" "rename-window '%%'"
 
 # Swap windows
 bind-key s command-prompt -p "Swap window with:" "swap-window -d -t '%%'"
