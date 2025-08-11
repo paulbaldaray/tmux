@@ -43,7 +43,7 @@ set -g window-status-current-format "#[fg=#{@darkest},bg=#{@purple}] #I #[fg=#{@
 set -g window-status-separator " "
 
 # Command prompt and message styling
-set -g message-style "bg=#{@darkest},fg=#{@purple}"
+set -g message-style "bg=#{@darkest},fg=#{@teal}"
 set -g message-command-style "bg=#{@darkest},fg=#{@light_gray}"
 
 # Pane border styling
