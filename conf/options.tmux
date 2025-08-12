@@ -19,5 +19,6 @@ set -g focus-events on
 
 # Clipboard
 set -g allow-passthrough on
+set -g set-clipboard on
 set -g @yank_selection_mouse 'clipboard'
 set -g @yank_action 'copy-pipe'
