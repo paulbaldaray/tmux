@@ -1,6 +1,6 @@
 # Colors
 set -g default-terminal "tmux-256color"
-set -as terminal-features ',tmux*:RGB'
+set -as terminal-features ',tmux*:RGB,xterm*:RGB'
 
 # Zsh
 set -g default-shell /bin/zsh
