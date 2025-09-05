@@ -14,6 +14,7 @@ bind m set -g mouse \; display "Mouse: #{?mouse,ON,OFF}"
 bind-key c command-prompt -p "Name:" "new-window -n '%%'"
 bind-key n command-prompt -p "Rename:" "rename-window '%%'"
 bind-key s command-prompt -p "Swap window with:" "swap-window -d -t '%%'"
+set -g @jump-key 'f'
 
 # Panes Selection
 bind-key h select-pane -L
@@ -36,3 +37,5 @@ setw -g mode-keys vi
 bind-key -T copy-mode-vi v send-keys -X begin-selection
 bind-key -T copy-mode-vi y send-keys -X copy-selection
 bind-key -T copy-mode-vi i send-keys -X cancel
+bind-key -T copy-mode-vi C-e send-keys -X scroll-down -N 5
+bind-key -T copy-mode-vi C-y send-keys -X scroll-up -N 5
