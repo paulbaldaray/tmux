@@ -18,6 +18,7 @@ git clone https://github.com/paulbaldaray/tmux ~/.config/tmux
 | `Prefix + c` | New window (with name) |
 | `Prefix + n` | Rename window |
 | `Prefix + s` | Swap window |
+| `Prefix + j` | Jump find |
 
 ### Panes
 | Key | Action |
