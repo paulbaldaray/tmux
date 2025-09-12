@@ -8,13 +8,12 @@ set -g prefix C-Space
 bind-key Space send-prefix
 
 # Toggle Mouse
-bind m set -g mouse \; display "Mouse: #{?mouse,ON,OFF}"
+bind m set -g mouse
 
 # Windows
 bind-key c command-prompt -p "Name:" "new-window -n '%%'"
 bind-key n command-prompt -p "Rename:" "rename-window '%%'"
-bind-key s command-prompt -p "Swap window with:" "swap-window -d -t '%%'"
-set -g @jump-key 'j'
+bind-key w command-prompt -p "Swap window with:" "swap-window -d -t '%%'"
 
 # Panes Selection
 bind-key h select-pane -L
@@ -31,6 +30,9 @@ bind -r H resize-pane -L 5
 bind -r J resize-pane -D 5
 bind -r K resize-pane -U 5
 bind -r L resize-pane -R 5
+
+# Jump Find
+set -g @jump-key 's'
 
 # Copy / Visual
 setw -g mode-keys vi

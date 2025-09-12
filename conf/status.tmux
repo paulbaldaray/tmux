@@ -19,8 +19,6 @@ set -g @teal "#94e2d5"
 
 # Status bar position and basic layout
 set-option -g status-position top
-set -g status-left '#{tmux_mode_indicator} '
-set -g status-right ''
 
 # Mode indicator prompts
 set -g @mode_indicator_prefix_prompt ' PREFIX '
@@ -33,6 +31,10 @@ set -g @mode_indicator_empty_mode_style 'bg=#{@dark},fg=#{@bright_text}'
 set -g @mode_indicator_prefix_mode_style 'bg=#{@green},fg=#{@darker}'
 set -g @mode_indicator_copy_mode_style 'bg=#{@yellow},fg=#{@darker}'
 set -g @mode_indicator_sync_mode_style 'bg=#{@red},fg=#{@darker}'
+
+# Status top
+set -g status-left '#{tmux_mode_indicator} '
+set -g status-right '#{?mouse,,#[fg=#{@darkest},bg=#{@purple}] MOUSE }'
 
 # Status bar base styling
 set -g status-style "bg=#{@dark},fg=#{@bright_text}"
