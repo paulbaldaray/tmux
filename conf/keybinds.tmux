@@ -8,7 +8,7 @@ set -g prefix C-Space
 bind-key Space send-prefix
 
 # Toggle Mouse
-bind m set -g mouse
+bind m set -s mouse
 
 # Windows
 bind-key c command-prompt -p "Name:" "new-window -n '%%'"
