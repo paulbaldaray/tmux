@@ -13,7 +13,7 @@ bind m set -s mouse
 # Windows
 bind-key c command-prompt -p "Name:" "new-window -n '%%'"
 bind-key n command-prompt -p "Rename:" "rename-window '%%'"
-bind-key w command-prompt -p "Swap window with:" "swap-window -d -t '%%'"
+bind-key w command-prompt -p "Swap with window index:" "swap-window -d -t '%%'"
 
 # Panes Selection
 bind-key h select-pane -L
