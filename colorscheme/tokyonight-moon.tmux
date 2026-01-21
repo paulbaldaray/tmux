@@ -1,0 +1,13 @@
+# Tokyonight Moon
+set -g @dark "#222436"
+set -g @darker "#1e2030"
+set -g @darkest "#191b29"
+set -g @dark_gray "#2f334d"
+set -g @med_gray "#3b4261"
+set -g @light_gray "#636da6"
+set -g @pale_gray "#828bb8"
+set -g @bright_text "#c8d3f5"
+set -g @blue "#82aaff"
+set -g @green "#c3e88d"
+set -g @yellow "#ffc777"
+set -g @red "#ff757f"
