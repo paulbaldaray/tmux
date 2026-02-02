@@ -4,10 +4,10 @@ source "~/.config/tmux/colorscheme/space-vim-dark.tmux"
 set-option -g status-position top
 
 # Mode indicator prompts
-set -g @mode_indicator_prefix_prompt ' PREFIX '
-set -g @mode_indicator_copy_prompt ' VISUAL '
-set -g @mode_indicator_empty_prompt ' '
-set -g @mode_indicator_sync_prompt ' SYNC '
+set -g @mode_indicator_prefix_prompt ' PREFIX #[bg=#{@darkest}] '
+set -g @mode_indicator_copy_prompt ' VISUAL #[bg=#{@darkest}] '
+set -g @mode_indicator_empty_prompt '#[default]'
+set -g @mode_indicator_sync_prompt ' SYNC #[bg=#{@darkest}] '
 
 # Mode indicator colors
 set -g @mode_indicator_empty_mode_style 'bg=#{@darkest},fg=#{@bright_text}'
@@ -16,7 +16,7 @@ set -g @mode_indicator_copy_mode_style 'bg=#{@yellow},fg=#{@darker}'
 set -g @mode_indicator_sync_mode_style 'bg=#{@red},fg=#{@darker}'
 
 # Status top
-set -g status-left '#{tmux_mode_indicator} '
+set -g status-left '#{tmux_mode_indicator}'
 set -g status-right '#{?mouse, MOUSE ,}'
 
 # Status bar base styling
