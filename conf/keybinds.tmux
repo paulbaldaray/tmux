@@ -1,11 +1,11 @@
 # Reload Config
 bind-key r source-file "~/.config/tmux/tmux.conf"\; \
-           display-message "Tmux config reloaded!"
+  display-message "Tmux config reloaded!"
 
 # Space Prefix + Forwarding
 unbind-key C-b
 set -g prefix C-Space
-bind-key Space send-prefix
+unbind-key Space
 
 # Toggle Mouse
 bind m set -s mouse
